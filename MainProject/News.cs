@@ -14,15 +14,15 @@ namespace MainProject
 {
    public class News
     {
-        public bool start;
-        public bool fin;
+       
         public string title { get; set; }
         public BitmapImage imgUrl { get; set; }
         public string context { get; set; }
         public string shortContext { get; set; }
         public int id { get; set; }
         public string category { get; set; }
-       public News(string title, string imgUrl, string context,string shortContext,int id, string category,bool start,bool fin)
+        public string href { get; set; }
+        public News(string title, string imgUrl, string context,string shortContext,int id, string category, string href)
         {
             this.title = title;
             this.context = context;
@@ -36,8 +36,7 @@ namespace MainProject
             this.shortContext = shortContext;
             this.id = id;
             this.category = category;
-            this.start = start;
-            this.fin = fin;
+            this.href = href;
         }
     }
 }

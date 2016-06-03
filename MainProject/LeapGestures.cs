@@ -18,6 +18,8 @@ namespace MainProject
             
                 {Gesture.GestureType.TYPESWIPE,"Swipe gesture"},
                 {Gesture.GestureType.TYPESCREENTAP,"Screen tap" }
+               
+
 
             };
 

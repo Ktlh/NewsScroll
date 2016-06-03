@@ -12,53 +12,74 @@
 
 
     <Canvas Grid.Row="1" Background="Transparent" x:Name="canvas">
-        <Grid Name="ControlsGrid3" Canvas.Left="523"   Height="174" Width="188" Canvas.Top="280" MouseEnter="ControlsGrid3_MouseEnter" MouseLeave="ControlsGrid3_MouseLeave">
+        <Grid Name="ControlsGrid3" Canvas.Left="523" Height="251" Width="189" Canvas.Top="256" MouseEnter="ControlsGrid3_MouseEnter" MouseLeave="ControlsGrid3_MouseLeave" Background="#FF6D6D78" MouseLeftButtonDown="ControlsGrid3_MouseLeftButtonDown">
             <TextBlock Name="TitleGrid3" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"  />
-            <Image Name="ImGrid3" Height="Auto" Width="Auto" Source="im1.jpg" Canvas.ZIndex="100"  Margin="0,51,0,0"/>
-            <TextBlock Name="ShotContextGrid3" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="10,51,0,0" Height="123" Width="168"  />
+            <Image Name="ImGrid3" Height="118"  Source="im1.jpg" Canvas.ZIndex="100"  Margin="0,56,0,77"/>
+            <TextBlock Name="ShotContextGrid3" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="0,179,0,-72" Height="67" Width="188" Visibility="Hidden"  />
         </Grid>
 
-        <Grid Name="ControlsGrid4" Canvas.Left="764" Height="174" Width="188"  Canvas.Top="280" MouseEnter="ControlsGrid4_MouseEnter" MouseLeave="ControlsGrid4_MouseLeave">
+        <Grid Name="ControlsGrid4" Canvas.Left="764" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid4_MouseEnter" MouseLeave="ControlsGrid4_MouseLeave" Background="#FF6D6D78" MouseLeftButtonDown="ControlsGrid4_MouseLeftButtonDown">
             <TextBlock Name="TitleGrid4" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"    />
-            <Image Name="ImGrid4" Height="Auto" Width="Auto" Source="im2.jpg" Canvas.ZIndex="100"  Margin="0,53,0,0"/>
-            <TextBlock Name="ShotContextGrid4" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="10,57,0,0" Height="117" Width="168"  />
+            <Image Name="ImGrid4" Height="118"  Source="im2.jpg" Canvas.ZIndex="100"  Margin="0,56,0,77"/>
+            <TextBlock Name="ShotContextGrid4" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="0,174,0,-68" Height="67" Width="188" Visibility="Hidden"  />
         </Grid>
 
-        <Grid Name="ControlsGrid1" Canvas.Left="48" Height="174" Width="188"  Canvas.Top="280" MouseEnter="ControlsGrid1_MouseEnter" MouseLeave="ControlsGrid1_MouseLeave" MouseLeftButtonDown="ControlsGrid1_MouseLeftButtonDown">
+        <Grid Name="ControlsGrid1" Canvas.Left="48" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid1_MouseEnter" MouseLeave="ControlsGrid1_MouseLeave" MouseLeftButtonDown="ControlsGrid1_MouseLeftButtonDown" Background="#FF6D6D78">
             <TextBlock Name="TitleGrid1" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"  />
-            <Image Name="ImGrid1" Height="Auto" Source="im3.png" Canvas.ZIndex="300" Margin="0,53,0,0"/>
-            <TextBlock Name="ShotContextGrid1" TextAlignment="Justify" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" Margin="10,58,0,0" Height="111" Width="168"  />
+            <Image Name="ImGrid1" Height="118" Source="im3.png" Canvas.ZIndex="300" Margin="0,53,0,80"/>
+            <TextBlock Name="ShotContextGrid1" TextAlignment="Justify" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" Margin="0,179,0,-74" Height="67" Width="188" Visibility="Hidden"  />
         </Grid>
 
-        <Grid Name="ControlsGrid2" Canvas.Left="282" Height="174" Width="188"  Canvas.Top="280" MouseEnter="ControlsGrid2_MouseEnter" MouseLeave="ControlsGrid2_MouseLeave">
+        <Grid Name="ControlsGrid2" Canvas.Left="292" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid2_MouseEnter" MouseLeave="ControlsGrid2_MouseLeave" Background="#FF6D6D78" MouseLeftButtonDown="ControlsGrid2_MouseLeftButtonDown">
             <TextBlock Name="TitleGrid2" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"   />
-            <Image Name="ImGrid2" Height="Auto" Width="Auto" Source="im4.jpg" Canvas.ZIndex="100"  Margin="0,43,0,-1" MouseLeftButtonDown="ImGrid2_MouseLeftButtonDown"/>
-            <TextBlock Name="ShotContextGrid2" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="10,51,0,0" Height="123" Width="168"  />
+            <Image Name="ImGrid2" Height="118" Source="im4.jpg" Canvas.ZIndex="100"  Margin="0,53,0,80" MouseLeftButtonDown="ImGrid2_MouseLeftButtonDown"/>
+            <TextBlock Name="ShotContextGrid2" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="0,180,0,-73" Height="67" Width="188" Visibility="Hidden"  />
         </Grid>
 
-        <Grid Name="ControlsGrid5" Canvas.Left="996" Height="174" Width="188"  Canvas.Top="280" MouseEnter="ControlsGrid5_MouseEnter" MouseLeave="ControlsGrid5_MouseLeave">
+        <Grid Name="ControlsGrid5" Canvas.Left="996" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid5_MouseEnter" MouseLeave="ControlsGrid5_MouseLeave" Background="#FF6D6D78" MouseLeftButtonDown="ControlsGrid5_MouseLeftButtonDown">
             <TextBlock Name="TitleGrid5" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"   />
-            <Image Name="ImGrid5" Height="Auto" Width="Auto" Source="im5.jpg" Canvas.ZIndex="100"  Margin="0,52,0,0"/>
-            <TextBlock Name="ShotContextGrid5" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="10,67,0,0" Height="107" Width="168"  />
+            <Image Name="ImGrid5" Height="118"  Source="im5.jpg" Canvas.ZIndex="100"  Margin="-1,56,1,77"/>
+            <TextBlock Name="ShotContextGrid5" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="0,174,0,-53" Height="67" Width="188" Visibility="Hidden"  />
         </Grid>
 
 
         <Button x:Name="button1" Content="Button" Canvas.Left="395" Canvas.Top="154" Width="75" Click="button1_Click" Height="26"/>
+        <ListBox x:Name="listBox" Height="123" Canvas.Left="737" Canvas.Top="10" Width="130" MouseDoubleClick="listBox_MouseDoubleClick" MouseLeftButtonDown="listBox_MouseLeftButtonDown" Background="#FF6D6D78" FontFamily="OCR A Extended" FontSize="13.333"/>
+        <Grid  x:Name="Shtorka" Height="530" Width="996" Background="White" Opacity="0" Visibility="Hidden"/>
+
         <Grid Name="SinglePage" Height="485" Canvas.Left="270" Canvas.Top="530" Background="DarkGray" Width="457" Visibility="Visible">
             <Image x:Name="SingleImage" HorizontalAlignment="Left" Height="204" Margin="10,10,0,0" VerticalAlignment="Top" Width="437"/>
             <TextBlock x:Name="SingleTextTitle"  FontFamily="Palatino Linotype" FontSize="20" TextAlignment="Left" TextWrapping="WrapWithOverflow" Margin="10,219,0,0" Text="TextBlock" VerticalAlignment="Top" Height="30" Width="437"/>
-            <TextBlock x:Name="SingleTextContext"  FontFamily="SimSun" FontSize="16" TextAlignment="Left" TextWrapping="WrapWithOverflow" Margin="10,254,10,0" Text="TextBlock" VerticalAlignment="Top" Height="221" Width="437"/>
+            <TextBlock x:Name="SingleTextContext"  FontFamily="SimSun" FontSize="16" TextAlignment="Justify" TextWrapping="WrapWithOverflow" Margin="10,254,10,0" Text="TextBlock" VerticalAlignment="Top" Height="221" Width="437"/>
+            <TextBlock TextAlignment="Center" MouseDown="TextBlock_MouseDown" Margin="348,437,10,10" FontFamily="SimSun">           
+    <Hyperlink x:Name="SingleHref" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+        Read on site
+    </Hyperlink>
+            </TextBlock>
         </Grid>
         <Button x:Name="button" Content="Button" Canvas.Left="174" Canvas.Top="180" Width="75" Click="button_Click_1"/>
-
+       
+        
     </Canvas>
 
 
     <Window.Resources>
+        <Storyboard x:Key="ShtorkaUp">
+            <DoubleAnimation Storyboard.TargetName="Shtorka"
+                            Storyboard.TargetProperty="Opacity"
+                           From="0" To="0.5" Duration="0:0:0.7">
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="ShtorkaDown">
+            <DoubleAnimation Storyboard.TargetName="Shtorka"
+                            Storyboard.TargetProperty="Opacity"
+                           From="0.5" To="0" Duration="0:0:0.5">
+            </DoubleAnimation>
+        </Storyboard>
         <Storyboard x:Key="visibleGridSingle">
             <DoubleAnimation Storyboard.TargetName="SinglePage"
                             Storyboard.TargetProperty="Opacity"
-                           From="0.3" To="1" Duration="0:0:0.7">
+                           From="0.3" To="1" Duration="0:0:0.5">
                 <DoubleAnimation.EasingFunction>
                     <CubicEase/>
                 </DoubleAnimation.EasingFunction>
