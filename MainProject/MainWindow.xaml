@@ -12,39 +12,45 @@
 
 
     <Canvas Grid.Row="1" Background="Transparent" x:Name="canvas">
-        <Grid Name="ControlsGrid3" Canvas.Left="523" Height="251" Width="189" Canvas.Top="256" MouseEnter="ControlsGrid3_MouseEnter" MouseLeave="ControlsGrid3_MouseLeave" Background="#FF6D6D78" MouseLeftButtonDown="ControlsGrid3_MouseLeftButtonDown">
-            <TextBlock Name="TitleGrid3" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"  />
+        <Image Name="fon" Source="fon2.jpg" Height="287" Width="1204" Canvas.Left="-104">
+            <Image.Effect>
+                <BlurEffect Radius="2"/>
+            </Image.Effect>
+        </Image>
+        <Grid Name="Categories" Width="118" Canvas.Left="876" Canvas.Top="10" Height="20" MouseLeftButtonDown="Categories_MouseLeftButtonDown">
+            <Image Source="arrow-left.png" Margin="0,0,78,0"/>
+            <TextBlock Text="Categories" TextAlignment="Center" Padding="4" FontFamily="Miriam Fixed" Margin="35,0,0,0"/>
+        </Grid>
+        <Grid Name="ControlsGrid3" Canvas.Left="523" Height="251" Width="189" Canvas.Top="256" MouseEnter="ControlsGrid3_MouseEnter" MouseLeave="ControlsGrid3_MouseLeave" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" MouseLeftButtonDown="ControlsGrid3_MouseLeftButtonDown">
+            <TextBlock Name="TitleGrid3" TextAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"  />
             <Image Name="ImGrid3" Height="118"  Source="im1.jpg" Canvas.ZIndex="100"  Margin="0,56,0,77"/>
             <TextBlock Name="ShotContextGrid3" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="0,179,0,-72" Height="67" Width="188" Visibility="Hidden"  />
         </Grid>
 
-        <Grid Name="ControlsGrid4" Canvas.Left="764" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid4_MouseEnter" MouseLeave="ControlsGrid4_MouseLeave" Background="#FF6D6D78" MouseLeftButtonDown="ControlsGrid4_MouseLeftButtonDown">
-            <TextBlock Name="TitleGrid4" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"    />
-            <Image Name="ImGrid4" Height="118"  Source="im2.jpg" Canvas.ZIndex="100"  Margin="0,56,0,77"/>
-            <TextBlock Name="ShotContextGrid4" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="0,174,0,-68" Height="67" Width="188" Visibility="Hidden"  />
+        <Grid Name="ControlsGrid4" Canvas.Left="764" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid4_MouseEnter" MouseLeave="ControlsGrid4_MouseLeave" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" MouseLeftButtonDown="ControlsGrid4_MouseLeftButtonDown">
+            <TextBlock Name="TitleGrid4" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"    />
+            <Image Name="ImGrid4" Height="118"   Canvas.ZIndex="100"  Margin="0,56,0,77"/>
+            <TextBlock Name="ShotContextGrid4" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" Margin="0,174,0,-68" Height="67" Width="188" Visibility="Hidden"  />
         </Grid>
 
-        <Grid Name="ControlsGrid1" Canvas.Left="48" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid1_MouseEnter" MouseLeave="ControlsGrid1_MouseLeave" MouseLeftButtonDown="ControlsGrid1_MouseLeftButtonDown" Background="#FF6D6D78">
+        <Grid Name="ControlsGrid1" Canvas.Left="48" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid1_MouseEnter" MouseLeave="ControlsGrid1_MouseLeave" MouseLeftButtonDown="ControlsGrid1_MouseLeftButtonDown" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
             <TextBlock Name="TitleGrid1" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"  />
             <Image Name="ImGrid1" Height="118" Source="im3.png" Canvas.ZIndex="300" Margin="0,53,0,80"/>
             <TextBlock Name="ShotContextGrid1" TextAlignment="Justify" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" Margin="0,179,0,-74" Height="67" Width="188" Visibility="Hidden"  />
         </Grid>
 
-        <Grid Name="ControlsGrid2" Canvas.Left="292" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid2_MouseEnter" MouseLeave="ControlsGrid2_MouseLeave" Background="#FF6D6D78" MouseLeftButtonDown="ControlsGrid2_MouseLeftButtonDown">
-            <TextBlock Name="TitleGrid2" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"   />
+        <Grid Name="ControlsGrid2" Canvas.Left="292" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid2_MouseEnter" MouseLeave="ControlsGrid2_MouseLeave" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" MouseLeftButtonDown="ControlsGrid2_MouseLeftButtonDown">
+            <TextBlock Name="TitleGrid2" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"   />
             <Image Name="ImGrid2" Height="118" Source="im4.jpg" Canvas.ZIndex="100"  Margin="0,53,0,80" MouseLeftButtonDown="ImGrid2_MouseLeftButtonDown"/>
             <TextBlock Name="ShotContextGrid2" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="0,180,0,-73" Height="67" Width="188" Visibility="Hidden"  />
         </Grid>
 
-        <Grid Name="ControlsGrid5" Canvas.Left="996" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid5_MouseEnter" MouseLeave="ControlsGrid5_MouseLeave" Background="#FF6D6D78" MouseLeftButtonDown="ControlsGrid5_MouseLeftButtonDown">
+        <Grid Name="ControlsGrid5" Canvas.Left="996" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid5_MouseEnter" MouseLeave="ControlsGrid5_MouseLeave" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" MouseLeftButtonDown="ControlsGrid5_MouseLeftButtonDown">
             <TextBlock Name="TitleGrid5" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"   />
             <Image Name="ImGrid5" Height="118"  Source="im5.jpg" Canvas.ZIndex="100"  Margin="-1,56,1,77"/>
             <TextBlock Name="ShotContextGrid5" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="0,174,0,-53" Height="67" Width="188" Visibility="Hidden"  />
         </Grid>
-
-
-        <Button x:Name="button1" Content="Button" Canvas.Left="395" Canvas.Top="154" Width="75" Click="button1_Click" Height="26"/>
-        <ListBox x:Name="listBox" Height="123" Canvas.Left="737" Canvas.Top="10" Width="130" MouseDoubleClick="listBox_MouseDoubleClick" MouseLeftButtonDown="listBox_MouseLeftButtonDown" Background="#FF6D6D78" FontFamily="OCR A Extended" FontSize="13.333"/>
+        <ListBox x:Name="listBox" Height="123" Canvas.Left="737" Canvas.Top="10" Width="130" MouseDoubleClick="listBox_MouseDoubleClick" MouseLeftButtonDown="listBox_MouseLeftButtonDown" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" FontFamily="OCR A Extended" FontSize="13.333" Visibility="Hidden" BorderBrush="{x:Null}"/>
         <Grid  x:Name="Shtorka" Height="530" Width="996" Background="White" Opacity="0" Visibility="Hidden"/>
 
         <Grid Name="SinglePage" Height="485" Canvas.Left="270" Canvas.Top="530" Background="DarkGray" Width="457" Visibility="Visible">
@@ -57,13 +63,24 @@
     </Hyperlink>
             </TextBlock>
         </Grid>
-        <Button x:Name="button" Content="Button" Canvas.Left="174" Canvas.Top="180" Width="75" Click="button_Click_1"/>
-       
-        
+
+
     </Canvas>
 
 
     <Window.Resources>
+        <Storyboard x:Key="listView">
+            <DoubleAnimation Storyboard.TargetName="listBox"
+                            Storyboard.TargetProperty="Opacity"
+                           From="0" To="1" Duration="0:0:0.7">
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="listHide">
+            <DoubleAnimation Storyboard.TargetName="listBox"
+                            Storyboard.TargetProperty="Opacity"
+                           From="1" To="0" Duration="0:0:0.7">
+            </DoubleAnimation>
+        </Storyboard>
         <Storyboard x:Key="ShtorkaUp">
             <DoubleAnimation Storyboard.TargetName="Shtorka"
                             Storyboard.TargetProperty="Opacity"

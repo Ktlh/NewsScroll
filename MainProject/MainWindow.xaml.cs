@@ -45,6 +45,7 @@ namespace MainProject
         private IList<string> categoryList = new List<string>();
         private bool Sort = false;
         private bool ShtorkaBool = false;
+        private bool ListBool = false;
         News SelectedNews = null;
         public MainWindow()
         {
@@ -575,6 +576,7 @@ namespace MainProject
                     }
                     catch (System.ArgumentOutOfRangeException ex)
                     {
+                        try { 
                         Console.WriteLine("wasted");
                         imgSrc = "Noimage.jpeg";
                         shortCont = news["response"]["docs"][i]["snippet"].ToString();
@@ -582,8 +584,10 @@ namespace MainProject
                         shortCont += "...";
                         newsarray[i] = new News(news["response"]["docs"][i]["headline"]["main"].ToString(), imgSrc, news["response"]["docs"][i]["snippet"].ToString(), shortCont, i + 1, news["response"]["docs"][i]["section_name"].ToString(), news["response"]["docs"][i]["web_url"].ToString());
                         newsListSorted.Add(newsarray[i]);
-
-                    }
+                        }
+                        catch(System.ArgumentOutOfRangeException exe)
+                    { }
+                        }
                 }
                 foreach (News elem in newslist)
                 {
@@ -751,6 +755,27 @@ namespace MainProject
 
         private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
+
+        }
+
+        private void Categories_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if(ListBool == false){
+                var storyboard = (System.Windows.Media.Animation.Storyboard)TryFindResource("listView");
+                storyboard.Begin();
+                this.listBox.Visibility = Visibility.Visible;
+                ListBool = true;
+            }
+            else
+            {
+                var storyboard = (System.Windows.Media.Animation.Storyboard)TryFindResource("listHide");
+                storyboard.Begin();
+                storyboard.Completed += new EventHandler((x, y) =>
+                {
+                    this.listBox.Visibility = Visibility.Hidden;
+                    ListBool = false;
+                });
+            }
 
         }
     }
