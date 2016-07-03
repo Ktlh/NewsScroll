@@ -1,0 +1,270 @@
+﻿<Window x:Class="MainProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MainProject"
+         WindowStartupLocation="CenterScreen" 
+        WindowStyle="ToolWindow"
+        mc:Ignorable="d"
+        Title="NewsScroll" Width="1000" Height="550" Closing="Window_Closing" ResizeMode="NoResize" Loaded="Window_Loaded">
+
+
+
+    <Canvas Grid.Row="1" Background="Transparent" x:Name="canvas">
+        <Image Name="fon" x:Uid="fon" Source="fon2.jpg" Height="287" Width="1204" Canvas.Left="-104">
+            <Image.Effect>
+                <BlurEffect Radius="2"/>
+            </Image.Effect>
+        </Image>
+        <Grid Name="Categories" Width="118" Canvas.Left="876" Canvas.Top="10" Height="20" MouseLeftButtonDown="Categories_MouseLeftButtonDown">
+            <Image x:Uid="arrowleft" Source="arrow-left.png" Margin="0,0,78,0"/>
+            <TextBlock  Text="Categories" TextAlignment="Center" Padding="4" FontFamily="Miriam Fixed" Margin="35,0,0,0"/>
+        </Grid>
+        <Grid Name="ControlsGrid3" Canvas.Left="523" Height="251" Width="189" Canvas.Top="256" MouseEnter="ControlsGrid3_MouseEnter" MouseLeave="ControlsGrid3_MouseLeave" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" MouseLeftButtonDown="ControlsGrid3_MouseLeftButtonDown">
+            <TextBlock Name="TitleGrid3" TextAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"  />
+            <Image x:Uid="image3" Name="ImGrid3" Height="118"   Canvas.ZIndex="100"  Margin="0,56,0,77"/>
+            <TextBlock Name="ShotContextGrid3" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" Margin="0,179,0,-72" Height="67" Width="188" Visibility="Hidden"  />
+        </Grid>
+
+        <Grid Name="ControlsGrid4" Canvas.Left="764" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid4_MouseEnter" MouseLeave="ControlsGrid4_MouseLeave" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" MouseLeftButtonDown="ControlsGrid4_MouseLeftButtonDown">
+            <TextBlock Name="TitleGrid4" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"    />
+            <Image x:Uid="image4" Name="ImGrid4" Height="118"   Canvas.ZIndex="100"  Margin="0,56,0,77"/>
+            <TextBlock Name="ShotContextGrid4" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" Margin="0,174,0,-68" Height="67" Width="188" Visibility="Hidden"  />
+        </Grid>
+
+        <Grid Name="ControlsGrid1" Canvas.Left="48" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid1_MouseEnter" MouseLeave="ControlsGrid1_MouseLeave" MouseLeftButtonDown="ControlsGrid1_MouseLeftButtonDown" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+            <TextBlock Name="TitleGrid1" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"  />
+            <Image  x:Uid="image1" Name="ImGrid1" Height="118"  Canvas.ZIndex="300" Margin="0,53,0,80"/>
+            <TextBlock Name="ShotContextGrid1" TextAlignment="Justify" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" Margin="0,179,0,-74" Height="67" Width="188" Visibility="Hidden"  />
+        </Grid>
+
+        <Grid Name="ControlsGrid2" Canvas.Left="292" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid2_MouseEnter" MouseLeave="ControlsGrid2_MouseLeave" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" MouseLeftButtonDown="ControlsGrid2_MouseLeftButtonDown">
+            <TextBlock Name="TitleGrid2" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"   />
+            <Image x:Uid="image2" Name="ImGrid2" Height="118"  Canvas.ZIndex="100"  Margin="0,53,0,80" MouseLeftButtonDown="ImGrid2_MouseLeftButtonDown"/>
+            <TextBlock Name="ShotContextGrid2" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="0,180,0,-73" Height="67" Width="188" Visibility="Hidden"  />
+        </Grid>
+
+        <Grid Name="ControlsGrid5" Canvas.Left="996" Height="251" Width="189"  Canvas.Top="256" MouseEnter="ControlsGrid5_MouseEnter" MouseLeave="ControlsGrid5_MouseLeave" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" MouseLeftButtonDown="ControlsGrid5_MouseLeftButtonDown">
+            <TextBlock Name="TitleGrid5" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Title" Height="48" Width="188" FontFamily="OCR A Extended" FontSize="16"   />
+            <Image x:Uid="image5" Name="ImGrid5" Height="118"   Canvas.ZIndex="100"  Margin="-1,56,1,77"/>
+            <TextBlock Name="ShotContextGrid5" TextAlignment="Justify" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Left" Text="I'm a Grid....sdfsdfsd dsfsds df sdf sdfsdfsdff sdff sdffdsf sd fsd sdf sdf sdf sd sd fsfsdfds fsdfsdf.." Margin="0,174,0,-53" Height="67" Width="188" Visibility="Hidden"  />
+        </Grid>
+        <ListBox x:Name="listBox" Height="123" Canvas.Left="737" Canvas.Top="10" Width="130" MouseDoubleClick="listBox_MouseDoubleClick" MouseLeftButtonDown="listBox_MouseLeftButtonDown" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" FontFamily="OCR A Extended" FontSize="13.333" Visibility="Hidden" BorderBrush="{x:Null}"/>
+        <Grid  x:Name="Shtorka" Height="530" Width="996" Background="White" Opacity="0" Visibility="Hidden"/>
+
+        <Grid Name="SinglePage" Height="485" Canvas.Left="270" Canvas.Top="530" Background="DarkGray" Width="457" Visibility="Visible">
+            <Image x:Uid="singleImage" x:Name="SingleImage" HorizontalAlignment="Left" Height="204" Margin="10,10,0,0" VerticalAlignment="Top" Width="437"/>
+            <TextBlock x:Name="SingleTextTitle"  FontFamily="Palatino Linotype" FontSize="20" TextAlignment="Left" TextWrapping="WrapWithOverflow" Margin="10,219,0,0" Text="TextBlock" VerticalAlignment="Top" Height="30" Width="437"/>
+            <TextBlock x:Name="SingleTextContext"  FontFamily="SimSun" FontSize="16" TextAlignment="Justify" TextWrapping="WrapWithOverflow" Margin="10,254,10,0" Text="TextBlock" VerticalAlignment="Top" Height="221" Width="437"/>
+            <TextBlock x:Uid="href" TextAlignment="Center" MouseDown="TextBlock_MouseDown" Margin="348,437,10,10" FontFamily="SimSun">           
+    <Hyperlink x:Name="SingleHref" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+        Read on site
+    </Hyperlink>
+            </TextBlock>
+        </Grid>
+
+
+    </Canvas>
+
+
+    <Window.Resources>
+        <Storyboard x:Key="listView">
+            <DoubleAnimation Storyboard.TargetName="listBox"
+                            Storyboard.TargetProperty="Opacity"
+                           From="0" To="1" Duration="0:0:0.7">
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard  x:Key="listHide">
+            <DoubleAnimation Storyboard.TargetName="listBox"
+                            Storyboard.TargetProperty="Opacity"
+                           From="1" To="0" Duration="0:0:0.7">
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="ShtorkaUp">
+            <DoubleAnimation Storyboard.TargetName="Shtorka"
+                            Storyboard.TargetProperty="Opacity"
+                           From="0" To="0.5" Duration="0:0:0.7">
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="ShtorkaDown">
+            <DoubleAnimation Storyboard.TargetName="Shtorka"
+                            Storyboard.TargetProperty="Opacity"
+                           From="0.5" To="0" Duration="0:0:0.5">
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="visibleGridSingle">
+            <DoubleAnimation Storyboard.TargetName="SinglePage"
+                            Storyboard.TargetProperty="Opacity"
+                           From="0.3" To="1" Duration="0:0:0.5">
+                <DoubleAnimation.EasingFunction>
+                    <CubicEase/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="SinglePage" 
+                                        Storyboard.TargetProperty="(Canvas.Top)"
+                                        From="150" To="20" Duration="0:0:0.5" />
+        </Storyboard>
+        <Storyboard x:Key="hideGridSingle">
+            <DoubleAnimation Storyboard.TargetName="SinglePage"
+                            Storyboard.TargetProperty="Opacity"
+                           From="1" To="0" Duration="0:0:0.7">
+                <DoubleAnimation.EasingFunction>
+                    <CubicEase/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="SinglePage" 
+                                        Storyboard.TargetProperty="(Canvas.Top)"
+                                        From="20" To="530" Duration="0:0:0.9" />
+        </Storyboard>
+        <Storyboard x:Key="visibleGrid1U">
+            <DoubleAnimation Storyboard.TargetName="ImGrid1"
+                            Storyboard.TargetProperty="Opacity"
+                           From="1" To="0.3" Duration="0:0:0.7">
+                <DoubleAnimation.EasingFunction>
+                    <CubicEase/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+
+        <Storyboard x:Key="visibleGrid1D">
+            <DoubleAnimation Storyboard.TargetName="ImGrid1"
+                            Storyboard.TargetProperty="Opacity"
+                           From="0.3" To="1" Duration="0:0:0.7">
+                <DoubleAnimation.EasingFunction>
+                    <CubicEase/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+
+        <Storyboard x:Key="visibleGrid2U">
+            <DoubleAnimation Storyboard.TargetName="ImGrid2"
+                            Storyboard.TargetProperty="Opacity"
+                           From="1" To="0.3" Duration="0:0:0.7">
+                <DoubleAnimation.EasingFunction>
+                    <CubicEase/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+
+        <Storyboard x:Key="visibleGrid2D">
+            <DoubleAnimation Storyboard.TargetName="ImGrid2"
+                            Storyboard.TargetProperty="Opacity"
+                           From="0.3" To="1" Duration="0:0:0.7">
+                <DoubleAnimation.EasingFunction>
+                    <CubicEase/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="visibleGrid3U">
+            <DoubleAnimation Storyboard.TargetName="ImGrid3"
+                            Storyboard.TargetProperty="Opacity"
+                           From="1" To="0.3" Duration="0:0:0.7">
+                <DoubleAnimation.EasingFunction>
+                    <CubicEase/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+
+        <Storyboard x:Key="visibleGrid3D">
+            <DoubleAnimation Storyboard.TargetName="ImGrid3"
+                            Storyboard.TargetProperty="Opacity"
+                           From="0.3" To="1" Duration="0:0:0.7">
+                <DoubleAnimation.EasingFunction>
+                    <CubicEase/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="visibleGrid4U">
+            <DoubleAnimation Storyboard.TargetName="ImGrid4"
+                            Storyboard.TargetProperty="Opacity"
+                           From="1" To="0.3" Duration="0:0:0.7">
+                <DoubleAnimation.EasingFunction>
+                    <CubicEase/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+
+        <Storyboard x:Key="visibleGrid4D">
+            <DoubleAnimation Storyboard.TargetName="ImGrid4"
+                            Storyboard.TargetProperty="Opacity"
+                           From="0.3" To="1" Duration="0:0:0.7">
+                <DoubleAnimation.EasingFunction>
+                    <CubicEase/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="visibleGrid5U">
+            <DoubleAnimation Storyboard.TargetName="ImGrid5"
+                            Storyboard.TargetProperty="Opacity"
+                           From="1" To="0.3" Duration="0:0:0.7">
+                <DoubleAnimation.EasingFunction>
+                    <CubicEase/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+
+        <Storyboard x:Key="visibleGrid5D">
+            <DoubleAnimation Storyboard.TargetName="ImGrid5"
+                            Storyboard.TargetProperty="Opacity"
+                           From="0.3" To="1" Duration="0:0:0.7">
+                <DoubleAnimation.EasingFunction>
+                    <CubicEase/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+
+        <Storyboard x:Key="left-swipe">
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid1" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="-190" To="48" Duration="0:0:0.5" />
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid2" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="48" To="282" Duration="0:0:0.5" />
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid3" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="282" To="523" Duration="0:0:0.5" />
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid4" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="523" To="764" Duration="0:0:0.5" />
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid5" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="764" To="996" Duration="0:0:0.5" />
+        </Storyboard>
+
+        <Storyboard x:Key="right-swipe">
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid1" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="48" To="-190" Duration="0:0:0.5" />
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid2" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="282" To="48" Duration="0:0:0.5" />
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid3" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="523" To="282" Duration="0:0:0.5" />
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid4" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="764" To="523" Duration="0:0:0.5" />
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid5" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="996" To="764" Duration="0:0:0.5" />
+        </Storyboard>
+        <Storyboard x:Key="resetRight">
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid1" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="48" To="48" Duration="0:0:0.5" />
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid2" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="282" To="282" Duration="0:0:0.5" />
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid3" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="523" To="523" Duration="0:0:0.5" />
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid4" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="764" To="764" Duration="0:0:0.5" />
+            <DoubleAnimation Storyboard.TargetName="ControlsGrid5" 
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="996" To="996" Duration="0:0:0.5" />
+        </Storyboard>
+    </Window.Resources>
+</Window>
